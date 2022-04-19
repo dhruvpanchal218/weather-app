@@ -15,13 +15,35 @@ const CityCard = (city) => {
  if (city.weatherDetails && city.weatherDetails.hasOwnProperty("coord")) {
   details = (
    <div className="details">
-    <h4 style={{ color: "#F2B138" }}>Weather Details</h4>
-    <p>
-     {city.weatherDetails?.name}-<span>{city.weatherDetails?.sys.country}</span>
-    </p>
+    <div className="top">
+     <div>
+      <p>
+       {city.weatherDetails?.name}-
+       <span>{city.weatherDetails?.sys.country}</span>
+      </p>
+     </div>
+     <div>
+      <h1>{Math.floor(city.weatherDetails.main?.temp - 273.15)}&deg;</h1>
+     </div>
+     <div className="description">
+      <p>{city.weatherDetails.weather[0]?.description}</p>
+     </div>
+    </div>
 
-    <h2>{Math.floor(city.weatherDetails.main?.temp - 273.15)}&deg;</h2>
-    <p>{city.weatherDetails.weather[0]?.description}</p>
+    <div className="bottom">
+     <div>
+      <p>{Math.floor(city.weatherDetails.main?.feels_like - 273.15)}&deg;</p>
+      <p>Feels Like</p>
+     </div>
+     <div>
+      <p>{city.weatherDetails.main?.humidity}%</p>
+      <p>Humidity</p>
+     </div>
+     <div>
+      <p>{Math.floor(city.weatherDetails.wind?.speed)} MPH</p>
+      <p>Wind Speed</p>
+     </div>
+    </div>
 
     <i
      className="far fa-trash-alt"

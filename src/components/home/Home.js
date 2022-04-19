@@ -70,20 +70,21 @@ function Home() {
       Refresh
      </button>
     </div>
-
-    {searchInput ? (
-     <div className="cards">
-      {filterCities?.map((city) => (
-       <CityCard key={city.id} {...city} />
-      ))}
-     </div>
-    ) : (
-     <div className="cards">
-      {weatherSelector?.weatherinfolist?.map((city) => (
-       <CityCard key={city.id} {...city} />
-      ))}
-     </div>
-    )}
+    <div className="container">
+     {searchInput ? (
+      <div className="cards">
+       {filterCities?.map((city) => (
+        <CityCard key={city.id} {...city} />
+       ))}
+      </div>
+     ) : (
+      <div className="cards">
+       {weatherSelector?.weatherinfolist?.map((city) => (
+        <CityCard key={city.id} {...city} />
+       ))}
+      </div>
+     )}
+    </div>
    </div>
   </React.Fragment>
  );
