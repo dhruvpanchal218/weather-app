@@ -17,10 +17,7 @@ const CityCard = (city) => {
    <div className="details">
     <div className="top">
      <div>
-      <p>
-       {city.weatherDetails?.name}-
-       <span>{city.weatherDetails?.sys.country}</span>
-      </p>
+      <p>{city.weatherDetails?.name}</p>
      </div>
      <div>
       <h1>{Math.floor(city.weatherDetails.main?.temp - 273.15)}&deg;</h1>

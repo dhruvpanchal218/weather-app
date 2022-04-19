@@ -97,14 +97,14 @@ input {
 .cards {
  justify-content: space-evenly;
  width: 90%;
- margin: 2rem auto;
- padding: 0.5rem;
+ margin: 1px auto;
+ padding: 1px;
  display: grid;
  grid-template-columns: repeat(3, 1fr);
  gap: 10px;
 }
 .container {
- margin: 2rem;
+ margin: 1px;
  padding: 16px;
 }
 
