@@ -50,12 +50,7 @@ function Home() {
  return (
   <React.Fragment>
    <div className="App">
-    <header>
-     <h1>Weather App</h1>
-    </header>
-   </div>
-
-   <main>
+    <h1>Weather App</h1>
     <form>
      <div className="control">
       <input
@@ -89,7 +84,7 @@ function Home() {
       ))}
      </div>
     )}
-   </main>
+   </div>
   </React.Fragment>
  );
 }
