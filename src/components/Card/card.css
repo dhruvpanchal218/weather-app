@@ -1,0 +1,12 @@
+.details {
+ padding: 20px;
+ background-color: white;
+ color: #042331;
+ border-radius: 18px;
+ box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+ margin: 1rem;
+ position: flex;
+}
+.fa-trash-alt:hover {
+ color: red;
+}

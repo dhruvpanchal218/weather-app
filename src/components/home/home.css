@@ -1,0 +1,75 @@
+.App {
+ display: flex;
+ justify-content: center;
+}
+
+main {
+ width: 100%;
+}
+form {
+ display: flex;
+ justify-content: center;
+ width: 100%;
+}
+
+.control {
+ width: 600px;
+ height: 40px;
+ margin-top: 20px;
+}
+input {
+ width: 90%;
+ height: 35px;
+ border-radius: 8px;
+ border: none;
+ outline: none;
+ background-color: white;
+ border-radius: 7px;
+ box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+.add {
+ width: 105px;
+ margin-top: 20px;
+ border-radius: 8px;
+ border: none;
+ outline: none;
+ background-color: #90dff7;
+ color: #0a5275;
+ border-radius: 7px;
+ box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+.add:hover {
+ transform: scale(95%);
+}
+
+.control2 {
+ display: center;
+ margin-top: 20px;
+}
+
+.refresh {
+ margin-right: 30px;
+ width: 105px;
+ display: center;
+ padding: 10px;
+ border-radius: 8px;
+ border: none;
+ outline: none;
+ background-color: #90dff7;
+ color: #0a5275;
+ border-radius: 7px;
+ box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+.refresh:hover {
+ transform: scale(95%);
+}
+
+.cards {
+ width: 70%;
+ display: center;
+ justify-content: flex-start;
+ flex-wrap: wrap;
+}
